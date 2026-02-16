@@ -45,6 +45,9 @@ export default class Cl_salon {
   /**
    * Calcula la nota promedio.
    * @returns number
+   * @note La nota promedio se calcula como la suma de todas las notas
+   *       dividida entre la cantidad total de estudiantes.
+   * @note Si no hay estudiantes, se devuelve 0.
    */
   promedio(): number {
     if (this.cntEstudiantes === 0) {
